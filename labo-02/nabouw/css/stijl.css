@@ -1,0 +1,49 @@
+header > h1 {
+    color: #b5451b;
+    font-style: bold;
+}
+
+.slogan{
+    font-style: italic;
+    color: grey;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+nav a {
+    font-weight: bold;
+    color: #b5451b;
+    text-decoration: none;
+}
+
+h2 + p {
+    font-size: 20px;
+}
+
+.kaart > li:nth-child(odd){
+    background-color: #f1e9dc;
+    
+}
+
+h3 {
+    color: #6b6b6b;
+}
+
+.prijs {
+    color: #6b6b6b;
+}
+
+a {
+    color: #b5451b;
+}
+
+strong {
+    color: #b5451b;
+}
+
+footer p, a {
+    color: #6b6b6b;
+    text-align: center;
+}
