@@ -6,3 +6,42 @@
 }
 
 /* === your rules === */
+body {
+    font-family: arial;
+    text-align: center;
+    width: calc(100%-2rem);
+    max-width: 40rem;
+    margin: 12rem auto 0 auto;
+    color: #282827;
+}
+h2{
+    font-size: 80px;
+    margin-bottom: 2rem;
+}
+span{
+    border-bottom: 20px solid #fccc00;
+    border-radius: 50%;
+}
+p{
+    font-size: 22px;
+    margin-bottom: 2rem;
+}
+a {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+a:hover{
+    background-color: grey;
+}
+a:focus{
+    background-color: green;
+}

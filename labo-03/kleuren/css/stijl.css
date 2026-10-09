@@ -6,6 +6,9 @@
 }
 
 /* === your rules === */
+h2 {
+    letter-spacing: 0.25rem;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -19,6 +22,7 @@ ul {
 .tomato {
     font-family: Arial;
     letter-spacing: 0.25rem;
+    line-height: 2;
     display: flex;
     flex-direction: column;  
     justify-content: center;
@@ -31,6 +35,7 @@ ul {
 .orangered {
     font-family: Arial;
     letter-spacing: 0.25rem;
+    line-height: 2;
     display: flex;
     flex-direction: column;  
     justify-content: center;
@@ -42,6 +47,7 @@ ul {
 .coral {
     font-family: Arial;
     letter-spacing: 0.25rem;
+    line-height: 2;
     display: flex;
     flex-direction: column;  
     justify-content: center;
@@ -53,6 +59,7 @@ ul {
 .lightsalmon {
     font-family: Arial;
     letter-spacing: 0.25rem;
+    line-height: 2;
     display: flex;
     flex-direction: column;  
     justify-content: center;
@@ -64,6 +71,7 @@ ul {
 .darkorange {
     font-family: Arial;
     letter-spacing: 0.25rem;
+    line-height: 2;
     display: flex;
     flex-direction: column;  
     justify-content: center;
