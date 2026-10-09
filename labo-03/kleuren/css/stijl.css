@@ -6,3 +6,69 @@
 }
 
 /* === your rules === */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.codes{
+    font-size: 10px;
+    letter-spacing: 0rem;
+    word-spacing: 1rem;
+}
+.tomato {
+    font-family: Arial;
+    letter-spacing: 0.25rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;   
+    margin: 0; 
+    color: white;
+    background-color: tomato;
+    height: 50vh;
+}
+.orangered {
+    font-family: Arial;
+    letter-spacing: 0.25rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: orangered;
+    height: 50vh;
+}
+.coral {
+    font-family: Arial;
+    letter-spacing: 0.25rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: coral;
+    height: 50vh;
+}
+.lightsalmon {
+    font-family: Arial;
+    letter-spacing: 0.25rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: lightsalmon;
+    height: 50vh;
+}
+.darkorange {
+    font-family: Arial;
+    letter-spacing: 0.25rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: darkorange;
+    height: 50vh;
+}
