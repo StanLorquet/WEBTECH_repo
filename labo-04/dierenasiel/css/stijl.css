@@ -13,6 +13,7 @@ header{
     background-color: #1f3a2e;
     margin: 1rem 2rem;
     font-style: Verdana;
+    border-radius: 0.5rem;
 }
 header > a {
     font-size: 24px;
@@ -51,7 +52,11 @@ header ul a.actief{
 }
 main{
     background-color: #f7f4ec;
-    height: 75vh;
+    height: 80vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    border-radius: 0.5rem;
+    margin-bottom: 5vh;
 }
 h1{
     margin-left: 30vh;
@@ -81,4 +86,16 @@ ul{
 }
 li:nth-child(1) {
     grid-column: span 2;
+}
+.soort{
+    color: #6b6b6b;
+    font-size: .9rem;
+}
+h2{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.beschrijving{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
 }
