@@ -1,4 +1,4 @@
-/* stijl.css - labo 4, navigatie (reset.css is linked before this file) */
+/* stijl.css - labo 4, dierenasiel (reset.css is linked before this file) */
 
 /* === tokens === */
 :root {
@@ -6,3 +6,46 @@
 }
 
 /* === your rules === */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f3a2e;
+    margin: 1rem 2rem;
+    font-style: Verdana;
+}
+header > a {
+    font-size: 24px;
+    margin-left: 1.25rem;
+    text-decoration: none;
+    color: #e6b53c;
+}
+header > a:hover{
+    background-color: #e6b53c;
+    color:#1f3a2e;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+header ul a {
+    display: inline-block;
+    color: #f3efe6;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+header ul a:hover{
+    background-color: #e6b53c;
+    color:#1f3a2e;
+}
+header ul a.actief{
+    color: #1f3a2e;
+    background-color: #e6b53c;
+}
