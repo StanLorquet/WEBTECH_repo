@@ -49,3 +49,36 @@ header ul a.actief{
     color: #1f3a2e;
     background-color: #e6b53c;
 }
+main{
+    background-color: #f7f4ec;
+    height: 75vh;
+}
+h1{
+    margin-left: 30vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.intro{
+    margin-left: 26vh;
+    max-width: 60rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2rem;
+}
+.kaarten{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1.5rem;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+ul{
+    list-style: none;
+}
+.kaart{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+li:nth-child(1) {
+    grid-column: span 2;
+}
