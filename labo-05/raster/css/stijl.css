@@ -6,3 +6,61 @@
 }
 
 /* === your rules === */
+html,body{
+    margin: 0;
+    height: 100%;
+}
+.raster{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+.vlak.a{
+    background-color: #e9493f;
+    padding: 0.5rem 0.75rem 0;
+    text-align: right;
+}
+.vlak.b{
+    grid-column-start: 4;
+    background-color: #edd24a;
+    padding: 0.5rem 0.75rem 0;
+    text-align: right;
+}
+.vlak.c{
+    background-color: #072f55;
+    padding: 0.5rem 0.75rem 0;
+    text-align: right;
+}
+.vlak.d{
+    background-color: #52a51a;
+    padding: 0.5rem 0.75rem 0;
+    text-align: right;
+}
+.vlak.e{
+    background-color: #efaad9;
+    padding: 0.5rem 0.75rem 0;
+    text-align: right;
+}
+.vlak.f{
+    background-color: #a5f129;
+    padding: 0.5rem 0.75rem 0;
+    text-align: right;
+}
+.vlak.g{
+    background-color: #ebc47a;
+    padding: 0.5rem 0.75rem 0;
+    text-align: right;
+}
+.vlak.h{
+    grid-column-start: 4;
+    background-color: #e8882c;
+    padding: 0.5rem 0.75rem 0;
+    text-align: right;
+}
