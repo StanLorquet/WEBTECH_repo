@@ -6,3 +6,65 @@
 }
 
 /* === your rules === */
+.citaten{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+    line-height: 1.5;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+cite{
+    font-style: normal;
+    font-size: 0.875rem;
+}
+.citaat.blauw{
+    border-left: 0.5rem solid #1e5bd8;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: #1e5bd8;
+}
+.citaat.roze{
+    border-left: 0.5rem solid #e88bb4;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: #e88bb4;
+}
+.citaat.rood{
+    border-left: 0.5rem solid #c51f2a;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: #c51f2a;
+}
+.citaat.oranje{
+    border-left: 0.5rem solid #d98c1a;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: #d98c1a;
+}
+.citaat.groen{
+    border-left: 0.5rem solid #3b7a2a;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: #3b7a2a;
+}
+.citaat.salie{
+    border-left: 0.5rem solid #8fb89a;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: #8fb89a;
+}
+.citaat.paars{
+    border-left: 0.5rem solid #7b4fa3;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: #7b4fa3;
+}
+.citaat.grijs{
+    border-left: 0.5rem solid #6b6b6b;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: #6b6b6b;
+}
