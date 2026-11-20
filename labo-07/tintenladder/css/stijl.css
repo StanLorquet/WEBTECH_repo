@@ -2,9 +2,93 @@
 
 /* === tokens === */
 :root {
-
+    --papier: hsl(40 30% 97%);
+    --inkt: hsl(210 25% 12%);
+    --gedempt: hsl(210 10% 42%);
+    --hue: 210;
 }
 
 /* === base === */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
 
+header {
+    background-color: var(--papier);
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: var(--inkt);
+}
+
+header p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.875rem;
+    color: var(--gedempt);
+}
 /* === the ten steps: one rule per step === */
+
+.ladder {
+    display: grid;
+    grid-template-rows: repeat(10, auto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.trede:nth-child(1) {
+    background-color: hsl(var(--hue) 55% 95%);
+    padding: 1rem;
+    color: var(--inkt);
+}
+.trede:nth-child(2){
+    background-color: hsl(var(--hue) 55% 85%);
+    padding: 1rem;
+    color: var(--inkt);
+}
+.trede:nth-child(3){
+    background-color: hsl(var(--hue) 55% 75%);
+    padding: 1rem;
+    color: var(--inkt);
+}
+.trede:nth-child(4){
+    background-color: hsl(var(--hue) 55% 65%);
+    padding: 1rem;
+    color: var(--inkt);
+}
+.trede:nth-child(5){
+    background-color: hsl(var(--hue) 55% 55%);
+    padding: 1rem;
+    color: var(--inkt);
+}
+.trede:nth-child(6){
+    background-color: hsl(var(--hue) 55% 45%);
+    padding: 1rem;
+    color: white;
+}
+.trede:nth-child(7){
+    background-color: hsl(var(--hue) 55% 35%);
+    padding: 1rem;
+    color: white;
+}
+.trede:nth-child(8){
+    background-color: hsl(var(--hue) 55% 25%);
+    padding: 1rem;
+    color: white;
+}
+.trede:nth-child(9){
+    background-color: hsl(var(--hue) 55% 15%);
+    padding: 1rem;
+    color: white;
+}
+.trede:nth-child(10){
+    background-color: hsl(var(--hue) 55% 5%);
+    padding: 1rem;
+    color: white;
+}
