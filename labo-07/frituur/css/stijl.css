@@ -2,9 +2,69 @@
 
 /* === tokens: five colour roles in hsl (7.7) === */
 :root {
+    color-scheme: light dark;
+    --oppervlak: hsl(45 60% 96%);
+    --inkt: hsl(25 30% 12%);
+    --gedempt: hsl(25 10% 40%);
+    --accent: hsl(22 85% 40%);
+    --lijn: hsl(40 25% 80%);
 
+    --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-xxl: 1.953rem;
+    --text-xxxl: 2.441rem;
+
+    --space-xs: 0.25rem;
+    --space-s: 0,5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
 }
 
 /* === base === */
+body {
+    display: grid;
+    min-height: 100svh;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 2fr 7fr 1fr;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+footer {
+    grid-row: 3;
+}
+
+header {
+    text-align: center;
+    grid-column: 1/4;
+    margin-top: var(--space-xl);
+}
+
+.naam {
+    font-size: var(--text-xxxl);
+    color: var(--accent);
+}
+.slogan {
+    color: var(--gedempt);
+    font-size: var(--text-l);
+}
+
+
 
 /* === dark mode: tokens only (7.9) === */
+@media(prefers-color-scheme: dark) {
+    :root {
+        --oppervlak: hsl(25 15% 10%);
+        --inkt: hsl(40 30% 92%);
+        --gedempt: hsl(30 10% 70%);
+        --accent: hsl(32 90% 62%);
+        --lijn: hsl(25 10% 28%);
+    }
+}
