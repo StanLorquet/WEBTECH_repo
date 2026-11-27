@@ -2,13 +2,113 @@
 
 /* === tokens: colours, fonts, sizes, and one duration and one curve (8.1) === */
 :root {
+    --oppervlak: hsl(210 20% 97%);
+    --inkt: hsl(215 30% 14%);
+    --gedempt: hsl(215 10%42%);
+    --accent: hsl(215 70% 40%);
+    --donkeraccent: hsl(215 70% 30%);
+    --lijn: hsl(210 15% 84%);
 
+    --duur: 200ms;
+    --curve: ease-out;
+
+    --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-xxl: 1.953rem;
+    --text-xxxl: 2.441rem;
+
+    --space-xs: 0.25rem;
+    --space-s: 0,5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
 }
 
 /* === base === */
+body {
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr;
+    font-family: "Atkinson Hyperlegible";
+    background-color: var(--oppervlak);
+}
 
+main {
+    border-bottom: 2px black solid;
+}
+
+main h2 {
+    margin: 2rem;
+}
+
+main section ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    transition: var(--gedempt) var(--duur) var(--curve);
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    border-bottom: 2px var(--accent) solid;
+    transform: transform var(--duur) var(--curve);
+}
+
+a:hover,
+a:focus-visible{
+    color: var(--accent);
+}
+
+a:hover::after,
+a:focus-visible::after{
+    transform: scaleX(1);
+}
 /* === header: links with an underline that grows from the left (8.3, 8.6) === */
+header {
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+}
 
+header p {
+    color: var(--inkt);
+    padding: var(--space-l);
+    top: var(--space-xs);
+    bottom: var(--space-xs);
+    font-size: var(--text-l);
+    font-weight: bold;
+}
+
+header ul {
+    top: var(--space-xs);
+    bottom: var(--space-xs);
+    font-size: var(--tekst-m);
+    padding: var(--space-l);
+    font-weight: bold;
+    display: flex;
+    gap: var(--space-m);
+    list-style: none;
+}
+header ul li a {
+    color: var(--gedempt);
+}
+
+header nav a {
+    text-decoration: none;
+}
 /* === cards: transition on the base state (8.2), lift on hover and focus-within === */
 
 /* === hover only where hovering exists (6.9) === */
@@ -17,5 +117,8 @@
 }
 
 /* === footer === */
+footer {
+    grid-row: 3;
+}
 
 /* === reduced motion (8.5) === */
